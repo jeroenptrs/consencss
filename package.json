@@ -1,0 +1,30 @@
+{
+  "name": "consencss",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "createLib": "cd packages && tsdx create",
+    "status": "oao status",
+    "bootstrap": "oao bootstrap",
+    "prepareRelease": "oao prepublish",
+    "release": "oao publish"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "oao": "^1.8.0",
+    "tsdx": "^0.13.2"
+  },
+  "author": "Jeroen Peeters <contact@jeroenpeeters.me>",
+  "description": "A CSS-in-JS library",
+  "homepage": "https://github.com/jeroenptrs/consencss",
+  "bugs": {
+    "url": "https://github.com/jeroenptrs/consencss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeroenptrs/consencss.git"
+  }
+}

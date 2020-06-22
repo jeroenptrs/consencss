@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "private": true,
+  "dependencies": {
+    "@consencss/core": "0.0.1",
+    "@types/react": "^16.9.38",
+    "@types/react-dom": "^16.9.8",
+    "parcel": "^1.12.4",
+    "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
+    "react-dom": "^16.13.1"
+  }
+}
