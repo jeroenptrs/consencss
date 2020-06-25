@@ -1,20 +1,22 @@
 {
   "name": "consencss",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "createLib": "cd packages && tsdx create",
+    "runTestProject": "cd packages/test && NODE_ENV=production parcel build index.html && NODE_ENV=production serve dist",
     "status": "oao status",
     "bootstrap": "oao bootstrap",
     "prepareRelease": "oao prepublish",
-    "release": "oao publish"
+    "release": "oao publish",
+    "repo": "oao"
   },
   "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "oao": "1.8.0",
+    "oao": "1.9.0",
     "tsdx": "0.13.2"
   },
   "author": "Jeroen Peeters <contact@jeroenpeeters.me>",

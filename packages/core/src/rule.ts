@@ -1,7 +1,14 @@
-import { isSimplePseudo, simplePseudos, SimplePseudos } from "@consencss/util";
-
-import { addToCacheAndSheet } from "./sheet";
-import { CSSClass, PropKey, PropValue, ClassStylePair } from "./types";
+import {
+  addToCacheAndSheet,
+  ClassStylePair,
+  CSSClass,
+  PropKey,
+  PropValue,
+  sanitizeValue,
+  SimplePseudos,
+  withPseudoClassName,
+  withPseudoStyle,
+} from "@consencss/util";
 
 export function rule<T extends PropKey>(prop: T, value: PropValue<T>): CSSClass;
 export function rule<T extends PropKey>(
@@ -30,11 +37,8 @@ export function createRule<T extends PropKey>(
   value: PropValue<T>,
   pseudo?: SimplePseudos
 ): ClassStylePair {
-  // TODO: sanitize values for className
   // TODO: create value() util for stuff like border
-  const className = `${
-    isSimplePseudo(pseudo) ? `${simplePseudos[pseudo]}-` : ""
-  }${prop}-${value}` as CSSClass;
-  const style = `.${className}${isSimplePseudo(pseudo) ? pseudo : ""}{${prop}:${value};}`;
+  const className = withPseudoClassName(`${prop}-${sanitizeValue(value)}` as CSSClass, pseudo);
+  const style = `.${withPseudoStyle(className, pseudo)}{${prop}:${value};}`;
   return [className, style];
 }

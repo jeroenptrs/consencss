@@ -1,6 +1,6 @@
 import { createOverride } from "override-clsx";
 
-import { CSSClass } from "./types";
+import { CSSClass } from "@consencss/util";
 
 export const classNames = createOverride<CSSClass>();
 

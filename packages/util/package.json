@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -35,5 +35,18 @@
     "tsdx": "0.13.2",
     "tslib": "2.0.0",
     "typescript": "3.9.5"
+  },
+  "dependencies": {
+    "csstype": "^2.6.10"
+  },
+  "description": "A CSS-in-JS library",
+  "author": "Jeroen Peeters <contact@jeroenpeeters.me>",
+  "homepage": "https://github.com/jeroenptrs/consencss",
+  "bugs": {
+    "url": "https://github.com/jeroenptrs/consencss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeroenptrs/consencss.git"
   }
 }

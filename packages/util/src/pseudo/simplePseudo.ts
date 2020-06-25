@@ -1,3 +1,5 @@
+import { CSSClass } from "../types";
+
 export const simplePseudos = {
   ":-khtml-any-link": "khtml-any-link",
   ":-moz-any-link": "moz-any-link",
@@ -96,6 +98,11 @@ export const simplePseudos = {
 
 export type SimplePseudos = keyof typeof simplePseudos;
 
-export function isSimplePseudo(s?: string): s is SimplePseudos {
-  return Object.keys(simplePseudos).includes(s || "");
-}
+export const isSimplePseudo = (s?: string): s is SimplePseudos =>
+  Object.keys(simplePseudos).includes(s || "");
+
+export const withPseudoClassName = (className: CSSClass, pseudo?: string): CSSClass =>
+  isSimplePseudo(pseudo) ? (`${simplePseudos[pseudo]}-${className}` as CSSClass) : className;
+
+export const withPseudoStyle = (className: CSSClass, pseudo?: string): string =>
+  isSimplePseudo(pseudo) ? `${className}${pseudo}` : className;
