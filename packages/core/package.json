@@ -38,7 +38,7 @@
     "typescript": "3.9.5"
   },
   "dependencies": {
-    "@consencss/util": "0.0.2",
+    "@consencss/util": "0.0.3",
     "override-clsx": "^1.0.1",
     "type-fest": "^0.15.1"
   },
