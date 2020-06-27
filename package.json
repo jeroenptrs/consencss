@@ -16,7 +16,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "oao": "1.9.0",
+    "oao": "1.10.0",
     "tsdx": "0.13.2"
   },
   "author": "Jeroen Peeters <contact@jeroenpeeters.me>",
