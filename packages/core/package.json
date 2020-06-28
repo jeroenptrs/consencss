@@ -40,7 +40,7 @@
   "dependencies": {
     "@consencss/util": "0.0.4",
     "override-clsx": "^1.0.1",
-    "type-fest": "^0.15.1"
+    "type-fest": "^0.16.0"
   },
   "description": "A CSS-in-JS library",
   "author": "Jeroen Peeters <contact@jeroenpeeters.me>",

@@ -15,7 +15,8 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build"
+    "prepare": "tsdx build",
+    "postpublish": "bump-siblings"
   },
   "peerDependencies": {},
   "husky": {
@@ -31,6 +32,7 @@
   "name": "@consencss/util",
   "module": "dist/util.esm.js",
   "devDependencies": {
+    "bump-siblings": "^1.0.0",
     "husky": "4.2.5",
     "tsdx": "0.13.2",
     "tslib": "2.0.0",
