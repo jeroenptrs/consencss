@@ -38,7 +38,7 @@
     "typescript": "3.9.5"
   },
   "dependencies": {
-    "@consencss/util": "0.0.4",
+    "@consencss/util": "0.0.5",
     "override-clsx": "^1.0.1",
     "type-fest": "^0.16.0"
   },
@@ -51,5 +51,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jeroenptrs/consencss.git"
-  }
+  },
+  "keywords": [
+    "css-in-js",
+    "atomic",
+    "css",
+    "utility"
+  ]
 }
