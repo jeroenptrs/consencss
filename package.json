@@ -8,14 +8,16 @@
     "status": "oao status",
     "bootstrap": "oao bootstrap",
     "prepareRelease": "oao prepublish",
-    "release": "oao publish",
-    "repo": "oao"
+    "release": "oao publish --tree",
+    "repo": "oao",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "conventional-changelog-cli": "^2.0.34",
     "oao": "1.10.0",
     "tsdx": "0.13.2"
   },

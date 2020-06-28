@@ -57,5 +57,9 @@
     "atomic",
     "css",
     "utility"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
