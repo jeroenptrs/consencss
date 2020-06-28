@@ -1692,7 +1692,7 @@ builtin-modules@^3.1.0:
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-3.1.0.tgz#aad97c15131eb76b65b50ef208e7584cd76a7484"
   integrity sha512-k0KL0aWZuBt2lrxrcASWDfwOLMnodeQjodT/1SxEQAXsHANgo6ZC/VEaSEHCXt7aSTZ4/4H5LKa+tBXmW7Vtvw==
 
-bump-siblings@^1.0.0:
+bump-siblings@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/bump-siblings/-/bump-siblings-1.0.0.tgz#660f887f9fe0f8480acb7e53a8d295fd0bb8d05b"
   integrity sha512-LzEGWIkW0NnDvhas2bwr/A/jIi1/pLmTZNKN/ww9q/LtLSXQUhu6t5jKY0eariqpSChUTHzZGCVkSgK++0VxMg==
