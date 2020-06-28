@@ -1,3 +1,3 @@
-export * from "./pseudo/simplePseudo";
+export * from "./pseudo";
 export * from "./types";
 export * from "./util";

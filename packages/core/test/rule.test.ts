@@ -27,5 +27,23 @@ describe("@consencss/core/rule", () => {
         `.hover-color-blue:hover{color:blue;}`,
       ]);
     });
+
+    it("returns a ClassStylePair containing an advanced pseudo selector and no pseudoValue", () => {
+      expect(createRule("color", "blue", "::cue")).toEqual([
+        `cue-color-blue`,
+        `.cue-color-blue::cue{color:blue;}`,
+      ]);
+    });
+
+    it("returns a ClassStylePair containing an advanced pseudo selector and a non-empty pseudoValue", () => {
+      expect(createRule("color", "blue", ":nth-child", 6)).toEqual([
+        `nth-child-6-color-blue`,
+        `.nth-child-6-color-blue:nth-child(6){color:blue;}`,
+      ]);
+      expect(createRule("color", "blue", ":nth-child", `6n+1`)).toEqual([
+        `nth-child-6n-1-color-blue`,
+        `.nth-child-6n-1-color-blue:nth-child(6n+1){color:blue;}`,
+      ]);
+    });
   });
 });

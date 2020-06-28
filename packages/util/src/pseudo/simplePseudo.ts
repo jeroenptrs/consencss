@@ -43,8 +43,6 @@ export const simplePseudos = {
   "::after": "after",
   "::backdrop": "backdrop",
   "::before": "before",
-  "::cue": "cue",
-  "::cue-region": "cue-region",
   "::first-letter": "first-letter",
   "::first-line": "first-line",
   "::grammar-error": "grammar-error",
@@ -101,8 +99,8 @@ export type SimplePseudos = keyof typeof simplePseudos;
 export const isSimplePseudo = (s?: string): s is SimplePseudos =>
   Object.keys(simplePseudos).includes(s || "");
 
-export const withPseudoClassName = (className: CSSClass, pseudo?: string): CSSClass =>
-  isSimplePseudo(pseudo) ? (`${simplePseudos[pseudo]}-${className}` as CSSClass) : className;
+export const withSimplePseudoClassName = (className: CSSClass, pseudo: SimplePseudos): CSSClass =>
+  `${simplePseudos[pseudo]}-${className}` as CSSClass;
 
-export const withPseudoStyle = (className: CSSClass, pseudo?: string): string =>
-  isSimplePseudo(pseudo) ? `${className}${pseudo}` : className;
+export const withSimplePseudoStyle = (className: CSSClass, pseudo: SimplePseudos): string =>
+  `${className}${pseudo}`;
