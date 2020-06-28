@@ -1,5 +1,5 @@
 {
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -38,7 +38,7 @@
     "typescript": "3.9.5"
   },
   "dependencies": {
-    "@consencss/util": "0.0.6",
+    "@consencss/util": "0.0.7",
     "override-clsx": "^1.0.1",
     "type-fest": "^0.16.0"
   },
