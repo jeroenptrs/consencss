@@ -39,7 +39,7 @@
     "typescript": "3.9.5"
   },
   "dependencies": {
-    "csstype": "^2.6.10"
+    "csstype": "^3.0.0"
   },
   "description": "A CSS-in-JS library",
   "author": "Jeroen Peeters <contact@jeroenpeeters.me>",
